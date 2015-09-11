@@ -4,6 +4,11 @@ body
 	padding-bottom: 70px;
 }
 
+#about-me
+{
+	overflow : hidden;
+}
+
 .appearanim
 {
 	animation-duration : 1;
@@ -16,11 +21,12 @@ body
 	from
 	{
 		height : 0%;
+		hidden : true;
 	}
 	
 	1%
 	{
-		hidden : true;
+		hidden : false;
 	}
 	
 	to
