@@ -55,6 +55,14 @@
         <p class="lead">This site was made as a project for ENG 100, an introductory course for first-year Engineering students at the University of Illinois at Urbana Champaign.</p>
         <p>This site is made using Bootstrap, a web framework that is made to scale well from phones to desktops.</p>
       </div>
+      
+      <div>
+        <button id = "about-me-btn" type = "button" class = "btn btn-info" onclick="toggleAboutMe()">Expand About Me</button>
+        
+        <div id="about-me">
+          <p> I am me</p>          
+        </div>
+      </div>
 
     </div><!-- /.container -->
     
@@ -76,5 +84,19 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+      var e = document.getElementById("about-me");
+      e.addEventListener("animationend", listener, false);
+      
+      function listener(e)
+      {
+        $("#about-me").toggleClass("appearanim", false);
+      }
+      
+      function toggleAboutMe()
+      {
+        $("#about-me").toggleClass("appearanim");
+      }
+    </script>
   </body>
 </html>

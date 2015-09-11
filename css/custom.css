@@ -3,3 +3,28 @@ body
 	padding-top : 70px;
 	padding-bottom: 70px;
 }
+
+.appearanim
+{
+	animation-duration : 1;
+	animation-name: appear;
+	animation-direction: alternate;
+}
+
+@keyframes appear
+{
+	from
+	{
+		height : 0%;
+	}
+	
+	1%
+	{
+		hidden : true;
+	}
+	
+	to
+	{
+		height : 100%
+	}
+}
