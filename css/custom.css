@@ -11,7 +11,7 @@ body
 
 .appearanim
 {
-	animation-duration : 1;
+	animation-duration : 1s;
 	animation-name: appear;
 	animation-direction: alternate;
 }
