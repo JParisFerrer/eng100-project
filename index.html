@@ -90,7 +90,10 @@
       
       function listener(e)
       {
-        $("#about-me").toggleClass("appearanim", false);
+        if(e.type == "animationend")
+          {
+            $("#about-me").toggleClass("appearanim", false);
+          }
       }
       
       function toggleAboutMe()
