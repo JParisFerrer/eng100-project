@@ -94,6 +94,9 @@
       {
         if(e.type == "animationend")
           {
+            if($(".disappearanim"))
+              $("#about-me").addClass("hide");
+            
             $("#about-me").toggleClass("appearanim", false);
             $("#about-me").toggleClass("disappearanim", false);
           }
