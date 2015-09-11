@@ -20,7 +20,12 @@ body
 {
 	animation-duration : 2s;
 	animation-name: appear;
-	animation-direction: alternate;
+}
+
+.disappearanim
+{
+	animation-duration : 2s;
+	animation-name : disappear
 }
 
 @keyframes appear
@@ -32,6 +37,19 @@ body
 
 	to
 	{
-		height : 300px
+		height : 350px;
+	}
+}
+
+@keyframes disappear
+{
+	from
+	{
+		height : 350px;
+	}
+	
+	to
+	{
+		height : 0px;
 	}
 }

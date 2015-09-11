@@ -95,13 +95,21 @@
         if(e.type == "animationend")
           {
             $("#about-me").toggleClass("appearanim", false);
+            $("#about-me").toggleClass("disappearanim", false);
           }
       }
       
       function toggleAboutMe()
       {
         $("#about-me").toggleClass("hide", false);
-        $("#about-me").toggleClass("appearanim");
+        if($("#about-me").attr("height") == "0px")
+        {
+          $("#about-me").toggleClass("appearanim");
+        }
+        else
+        {
+          $("#about-me").toggleClass("disappearanim;")
+        }
       }
     </script>
   </body>
