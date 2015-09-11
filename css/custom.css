@@ -7,7 +7,7 @@ body
 #about-me
 {
 	overflow : hidden;
-	margin-top : 20px;
+	margin-top : 30px;
 	/*display:  none;*/
 }
 
@@ -37,7 +37,7 @@ body
 
 	to
 	{
-		height : 350px;
+		height : 325px;
 	}
 }
 
@@ -45,7 +45,7 @@ body
 {
 	from
 	{
-		height : 350px;
+		height : 325px;
 	}
 	
 	to
