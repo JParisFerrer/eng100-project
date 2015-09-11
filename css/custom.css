@@ -11,6 +11,11 @@ body
 	/*display:  none;*/
 }
 
+.hide
+{
+	display : none;
+}
+
 .appearanim
 {
 	animation-duration : 2s;
