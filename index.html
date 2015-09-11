@@ -94,7 +94,7 @@
       {
         if(e.type == "animationend")
           {
-            if($(".disappearanim"))
+            if($("#about-me").hasClass("disappearanim"))
             {
               $("#about-me").addClass("hide");
             }
@@ -106,7 +106,7 @@
       
       function toggleAboutMe()
       {
-        if($(".hide"))
+        if($("#about-me").hasClass("hide"))
         {
           $("#about-me").toggleClass("appearanim");
         }
