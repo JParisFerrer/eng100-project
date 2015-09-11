@@ -7,6 +7,8 @@ body
 #about-me
 {
 	overflow : hidden;
+	margin-top : 20px;
+	display:  none;
 }
 
 .appearanim
@@ -21,12 +23,12 @@ body
 	from
 	{
 		height : 0%;
-		hidden : true;
+		display: none;
 	}
 	
 	1%
 	{
-		hidden : false;
+		display : block;
 	}
 	
 	to
