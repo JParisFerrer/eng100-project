@@ -30,7 +30,7 @@ function toggleAboutMe()
 
 
 var d = document.getElementById("projects");
-e.addEventListener("animationend", projectsListener, false);
+d.addEventListener("animationend", projectsListener, false);
       
 function projectsListener(e)
 {
