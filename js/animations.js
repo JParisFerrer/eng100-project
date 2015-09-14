@@ -48,13 +48,13 @@ function projectsListener(e)
 
 function toggleProjects()
 {
-  if($("#about-me").hasClass("hide"))
+  if($("#projects").hasClass("hide"))
   {
-    $("#about-me").toggleClass("appearanimP");
+    $("#projects").toggleClass("appearanimP");
   }
   else
   {
-    $("#about-me").toggleClass("disappearanimP");  }
+    $("#projects").toggleClass("disappearanimP");  }
   
-  $("#about-me").toggleClass("hide", false);
+  $("#projects").toggleClass("hide", false);
 }
