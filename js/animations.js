@@ -54,7 +54,8 @@ function toggleProjects()
   }
   else
   {
-    $("#projects").toggleClass("disappearanimP");  }
+    $("#projects").toggleClass("disappearanimP");  
+    }
   
   $("#projects").toggleClass("hide", false);
 }
