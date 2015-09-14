@@ -61,11 +61,25 @@
         
         <div id="about-me" class="hide">
           <p> Hello there! My name is Jordi Paris Ferrer and I'm a Freshman studying Computer Science at the University of Illinois.</p>
-          <p>I don't have a picture of me, so here is a picture of a dog instead: </p>
-          <img src="assets/dog.png" width= "256px" height = "256px"/>  
+          
+          <img src="assets/me.jpg" width= "256px" height = "256px"/>  
           <p> Feel free to check out the <a href="about.html"> about page</a> for more information!</p>
         </div>
       </div>
+
+      <div margin-top="30px">
+        <button id = "projects-btn" type = "button" class = "btn btn-info" onclick="toggleProjects()">Toggle About Me</button>
+        
+        <div id="projects" class="hide">
+          <p> Here are some of the projects I've worked on: </p>
+          <ul>
+            <li>
+              Personal Website:
+            </li>
+          </ul>
+        </div>
+      </div>
+
 
     </div><!-- /.container -->
     
@@ -87,37 +101,6 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script>
-      var e = document.getElementById("about-me");
-      e.addEventListener("animationend", listener, false);
-      
-      function listener(e)
-      {
-        if(e.type == "animationend")
-          {
-            if($("#about-me").hasClass("disappearanim"))
-            {
-              $("#about-me").addClass("hide");
-            }
-            
-            $("#about-me").toggleClass("appearanim", false);
-            $("#about-me").toggleClass("disappearanim", false);
-          }
-      }
-      
-      function toggleAboutMe()
-      {
-        if($("#about-me").hasClass("hide"))
-        {
-          $("#about-me").toggleClass("appearanim");
-        }
-        else
-        {
-          $("#about-me").toggleClass("disappearanim");
-        }
-        
-        $("#about-me").toggleClass("hide", false);
-      }
-    </script>
+    <script src="js/animations.js"> </script>
   </body>
 </html>

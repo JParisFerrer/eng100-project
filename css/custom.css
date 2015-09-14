@@ -16,19 +16,19 @@ body
 	display : none;
 }
 
-.appearanim
+.appearanimAE
 {
 	animation-duration : 2s;
-	animation-name: appear;
+	animation-name: appearAE;
 }
 
-.disappearanim
+.disappearanimAE
 {
 	animation-duration : 2s;
-	animation-name : disappear
+	animation-name : disappearAE
 }
 
-@keyframes appear
+@keyframes appearAE
 {
 	from
 	{
@@ -41,7 +41,45 @@ body
 	}
 }
 
-@keyframes disappear
+@keyframes disappearAE
+{
+	from
+	{
+		height : 325px;
+	}
+	
+	to
+	{
+		height : 0px;
+	}
+}
+
+.appearanimP
+{
+	animation-duration : 2s;
+	animation-name: appearP;
+}
+
+.disappearanimP
+{
+	animation-duration : 2s;
+	animation-name : disappearP
+}
+
+@keyframes appearP
+{
+	from
+	{
+		height : 0px;
+	}
+
+	to
+	{
+		height : 325px;
+	}
+}
+
+@keyframes disappearP
 {
 	from
 	{
